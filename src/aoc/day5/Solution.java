@@ -61,7 +61,6 @@ public class Solution {
         List<Long> all = new ArrayList<>();
 
         seeds.forEach(seed -> {
-//            String firstSeed = seeds.get(0);
             long loc = Long.parseLong(seed);
             for (List<List<String>> ranges : maps) {
                 for (List<String> range : ranges) {
@@ -73,9 +72,6 @@ public class Solution {
                     if (loc >= source && loc <= source + r - 1) {
                         System.out.println("----" + loc);
                         loc = destination + (loc - source);
-
-//                        52 + 79 - 50 -> 81 ->
-
                         break;
                     }
                 }
