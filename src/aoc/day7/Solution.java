@@ -10,17 +10,6 @@ import static aoc.FileReader.readFile;
 
 public class Solution {
     public static final String JOKER = "J";
-
-
-    private static Map<CardType, CardType> cardUpgradeRule = Map.ofEntries(
-            Map.entry(CardType.FIVE,CardType.FIVE),
-            Map.entry(CardType.FOUR,CardType.FIVE),
-            Map.entry(CardType.FULL_HOUSE,CardType.FIVE),
-            Map.entry(CardType.THREE,CardType.FOUR),
-            Map.entry(CardType.TWO_PAIR,CardType.FOUR),
-            Map.entry(CardType.ONE_PAIR,CardType.THREE),
-            Map.entry(CardType.HIGH_CARD,CardType.ONE_PAIR)
-    );
     private static Map<String, Long> cardValues = Map.ofEntries(
             Map.entry("A", 13L),
             Map.entry("K", 12L),
